@@ -1,4 +1,3 @@
-#include <iostream>
 #include "input_manager.h"
 
 int main() {

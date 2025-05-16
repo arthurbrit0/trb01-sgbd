@@ -1,0 +1,2715 @@
+[LOG] Arquivo inexistente, criando: index.txt
+[LOG] BufferManager OK (pageSize=73, cap=64)
+[LOG] MISS p0 carregada
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:3;rootId:2'
+[LOG] MISS p1 carregada
+[LOG] markDirty p1
+[LOG] WRITE p1 'id;leaf;keys;parent;children;prev;next;refs'
+[LOG] MISS p2 carregada
+[LOG] markDirty p2
+[LOG] WRITE p2 '2;1;;-1;null;null;null;'
+[LOG] IndexTree ctor ordem=3 pageSize=73
+[LOG] HIT p0
+[LOG] HIT p2
+[LOG] loadNode p2 keys=0
+[LOG] HIT p2
+[LOG] markDirty p2
+[LOG] WRITE p2 '2;1;1955;-1;null;null;null;6'
+[LOG] HIT p0
+[LOG] HIT p2
+[LOG] loadNode p2 keys=1
+[LOG] HIT p2
+[LOG] markDirty p2
+[LOG] WRITE p2 '2;1;1955,1955;-1;null;null;null;349,6'
+[LOG] HIT p0
+[LOG] HIT p2
+[LOG] loadNode p2 keys=2
+[LOG] HIT p2
+[LOG] markDirty p2
+[LOG] WRITE p2 '2;1;1955,1955,1955;-1;null;null;null;385,349,6'
+[LOG] HIT p0
+[LOG] HIT p2
+[LOG] loadNode p2 keys=3
+[LOG] HIT p0
+[LOG] HIT p2
+[LOG] markDirty p2
+[LOG] WRITE p2 '2;1;1955,1955;-1;null;null;null;530,385'
+[LOG] HIT p0
+[LOG] MISS p3 carregada
+[LOG] markDirty p3
+[LOG] WRITE p3 '3;1;1955,1955;-1;null;2;null;349,6'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:4;rootId:2'
+[LOG] HIT p2
+[LOG] loadNode p2 keys=2
+[LOG] HIT p2
+[LOG] markDirty p2
+[LOG] WRITE p2 '2;1;1955,1955;-1;null;null;3;530,385'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] MISS p4 carregada
+[LOG] markDirty p4
+[LOG] WRITE p4 '4;0;1955;-1;2,3;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:5;rootId:2'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:5;rootId:4'
+[LOG] HIT p2
+[LOG] loadNode p2 keys=2
+[LOG] HIT p2
+[LOG] markDirty p2
+[LOG] WRITE p2 '2;1;1955,1955;4;null;null;3;530,385'
+[LOG] HIT p3
+[LOG] loadNode p3 keys=2
+[LOG] HIT p3
+[LOG] markDirty p3
+[LOG] WRITE p3 '3;1;1955,1955;4;null;2;null;349,6'
+[LOG] HIT p0
+[LOG] HIT p4
+[LOG] loadNode p4 keys=1
+[LOG] HIT p3
+[LOG] loadNode p3 keys=2
+[LOG] HIT p3
+[LOG] markDirty p3
+[LOG] WRITE p3 '3;1;1955,1955,1955;4;null;2;null;592,349,6'
+[LOG] HIT p0
+[LOG] HIT p4
+[LOG] loadNode p4 keys=1
+[LOG] HIT p3
+[LOG] loadNode p3 keys=3
+[LOG] HIT p0
+[LOG] HIT p3
+[LOG] markDirty p3
+[LOG] WRITE p3 '3;1;1955,1955;4;null;2;null;666,592'
+[LOG] HIT p0
+[LOG] MISS p5 carregada
+[LOG] markDirty p5
+[LOG] WRITE p5 '5;1;1955,1955;4;null;3;null;349,6'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:6;rootId:4'
+[LOG] HIT p3
+[LOG] loadNode p3 keys=2
+[LOG] HIT p3
+[LOG] markDirty p3
+[LOG] WRITE p3 '3;1;1955,1955;4;null;2;5;666,592'
+[LOG] HIT p4
+[LOG] loadNode p4 keys=1
+[LOG] HIT p4
+[LOG] markDirty p4
+[LOG] WRITE p4 '4;0;1955,1955;-1;2,5,3;null;null;'
+[LOG] HIT p0
+[LOG] HIT p4
+[LOG] loadNode p4 keys=2
+[LOG] HIT p3
+[LOG] loadNode p3 keys=2
+[LOG] HIT p3
+[LOG] markDirty p3
+[LOG] WRITE p3 '3;1;1955,1955,1955;4;null;2;5;734,666,592'
+[LOG] HIT p0
+[LOG] HIT p4
+[LOG] loadNode p4 keys=2
+[LOG] HIT p3
+[LOG] loadNode p3 keys=3
+[LOG] HIT p0
+[LOG] HIT p3
+[LOG] markDirty p3
+[LOG] WRITE p3 '3;1;1955,1955;4;null;2;5;750,734'
+[LOG] HIT p0
+[LOG] MISS p6 carregada
+[LOG] markDirty p6
+[LOG] WRITE p6 '6;1;1955,1955;4;null;3;5;666,592'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:7;rootId:4'
+[LOG] HIT p3
+[LOG] loadNode p3 keys=2
+[LOG] HIT p3
+[LOG] markDirty p3
+[LOG] WRITE p3 '3;1;1955,1955;4;null;2;6;750,734'
+[LOG] HIT p5
+[LOG] loadNode p5 keys=2
+[LOG] HIT p5
+[LOG] markDirty p5
+[LOG] WRITE p5 '5;1;1955,1955;4;null;6;null;349,6'
+[LOG] HIT p4
+[LOG] loadNode p4 keys=2
+[LOG] HIT p4
+[LOG] markDirty p4
+[LOG] WRITE p4 '4;0;1955,1955,1955;-1;2,6,5,3;null;null;'
+[LOG] HIT p0
+[LOG] HIT p4
+[LOG] loadNode p4 keys=3
+[LOG] HIT p3
+[LOG] loadNode p3 keys=2
+[LOG] HIT p3
+[LOG] markDirty p3
+[LOG] WRITE p3 '3;1;1955,1955,1955;4;null;2;6;769,750,734'
+[LOG] HIT p0
+[LOG] HIT p4
+[LOG] loadNode p4 keys=3
+[LOG] HIT p3
+[LOG] loadNode p3 keys=3
+[LOG] HIT p0
+[LOG] HIT p3
+[LOG] markDirty p3
+[LOG] WRITE p3 '3;1;1955,1955;4;null;2;6;978,769'
+[LOG] HIT p0
+[LOG] MISS p7 carregada
+[LOG] markDirty p7
+[LOG] WRITE p7 '7;1;1955,1955;4;null;3;6;750,734'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:8;rootId:4'
+[LOG] HIT p3
+[LOG] loadNode p3 keys=2
+[LOG] HIT p3
+[LOG] markDirty p3
+[LOG] WRITE p3 '3;1;1955,1955;4;null;2;7;978,769'
+[LOG] HIT p6
+[LOG] loadNode p6 keys=2
+[LOG] HIT p6
+[LOG] markDirty p6
+[LOG] WRITE p6 '6;1;1955,1955;4;null;7;5;666,592'
+[LOG] HIT p4
+[LOG] loadNode p4 keys=3
+[LOG] HIT p4
+[LOG] markDirty p4
+[LOG] WRITE p4 '4;0;1955,1955,1955,1955;-1;2,7,6,5,3;null;null;'
+[LOG] HIT p4
+[LOG] markDirty p4
+[LOG] WRITE p4 '4;0;1955,1955;-1;2,7,6;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] MISS p8 carregada
+[LOG] markDirty p8
+[LOG] WRITE p8 '8;0;1955;-1;5,3;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:9;rootId:4'
+[LOG] HIT p5
+[LOG] loadNode p5 keys=2
+[LOG] HIT p5
+[LOG] markDirty p5
+[LOG] WRITE p5 '5;1;1955,1955;8;null;6;null;349,6'
+[LOG] HIT p3
+[LOG] loadNode p3 keys=2
+[LOG] HIT p3
+[LOG] markDirty p3
+[LOG] WRITE p3 '3;1;1955,1955;8;null;2;7;978,769'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] MISS p9 carregada
+[LOG] markDirty p9
+[LOG] WRITE p9 '9;0;1955;-1;4,8;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:10;rootId:4'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:10;rootId:9'
+[LOG] HIT p4
+[LOG] loadNode p4 keys=2
+[LOG] HIT p4
+[LOG] markDirty p4
+[LOG] WRITE p4 '4;0;1955,1955;9;2,7,6;null;null;'
+[LOG] HIT p8
+[LOG] loadNode p8 keys=1
+[LOG] HIT p8
+[LOG] markDirty p8
+[LOG] WRITE p8 '8;0;1955;9;5,3;null;null;'
+[LOG] HIT p0
+[LOG] HIT p9
+[LOG] loadNode p9 keys=1
+[LOG] HIT p8
+[LOG] loadNode p8 keys=1
+[LOG] HIT p3
+[LOG] loadNode p3 keys=2
+[LOG] HIT p3
+[LOG] markDirty p3
+[LOG] WRITE p3 '3;1;1955,1955,1955;8;null;2;7;986,978,769'
+[LOG] HIT p0
+[LOG] HIT p9
+[LOG] loadNode p9 keys=1
+[LOG] HIT p8
+[LOG] loadNode p8 keys=1
+[LOG] HIT p3
+[LOG] loadNode p3 keys=3
+[LOG] HIT p0
+[LOG] HIT p3
+[LOG] markDirty p3
+[LOG] WRITE p3 '3;1;1955,1955;8;null;2;7;986,978'
+[LOG] HIT p0
+[LOG] MISS p10 carregada
+[LOG] markDirty p10
+[LOG] WRITE p10 '10;1;1955,1995;8;null;3;7;769,7'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:11;rootId:9'
+[LOG] HIT p3
+[LOG] loadNode p3 keys=2
+[LOG] HIT p3
+[LOG] markDirty p3
+[LOG] WRITE p3 '3;1;1955,1955;8;null;2;10;986,978'
+[LOG] HIT p7
+[LOG] loadNode p7 keys=2
+[LOG] HIT p7
+[LOG] markDirty p7
+[LOG] WRITE p7 '7;1;1955,1955;4;null;10;6;750,734'
+[LOG] HIT p8
+[LOG] loadNode p8 keys=1
+[LOG] HIT p8
+[LOG] markDirty p8
+[LOG] WRITE p8 '8;0;1955,1955;9;5,10,3;null;null;'
+[LOG] HIT p0
+[LOG] HIT p9
+[LOG] loadNode p9 keys=1
+[LOG] HIT p8
+[LOG] loadNode p8 keys=2
+[LOG] HIT p3
+[LOG] loadNode p3 keys=2
+[LOG] HIT p3
+[LOG] markDirty p3
+[LOG] WRITE p3 '3;1;1955,1955,1995;8;null;2;10;986,978,27'
+[LOG] HIT p0
+[LOG] HIT p9
+[LOG] loadNode p9 keys=1
+[LOG] HIT p8
+[LOG] loadNode p8 keys=2
+[LOG] HIT p3
+[LOG] loadNode p3 keys=3
+[LOG] HIT p0
+[LOG] HIT p3
+[LOG] markDirty p3
+[LOG] WRITE p3 '3;1;1955,1955;8;null;2;10;986,978'
+[LOG] HIT p0
+[LOG] MISS p11 carregada
+[LOG] markDirty p11
+[LOG] WRITE p11 '11;1;1995,1995;8;null;3;10;52,27'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:12;rootId:9'
+[LOG] HIT p3
+[LOG] loadNode p3 keys=2
+[LOG] HIT p3
+[LOG] markDirty p3
+[LOG] WRITE p3 '3;1;1955,1955;8;null;2;11;986,978'
+[LOG] HIT p10
+[LOG] loadNode p10 keys=2
+[LOG] HIT p10
+[LOG] markDirty p10
+[LOG] WRITE p10 '10;1;1955,1995;8;null;11;7;769,7'
+[LOG] HIT p8
+[LOG] loadNode p8 keys=2
+[LOG] HIT p8
+[LOG] markDirty p8
+[LOG] WRITE p8 '8;0;1955,1955,1995;9;5,10,3,11;null;null;'
+[LOG] HIT p0
+[LOG] HIT p9
+[LOG] loadNode p9 keys=1
+[LOG] HIT p8
+[LOG] loadNode p8 keys=3
+[LOG] HIT p11
+[LOG] loadNode p11 keys=2
+[LOG] HIT p11
+[LOG] markDirty p11
+[LOG] WRITE p11 '11;1;1995,1995,1995;8;null;3;10;356,52,27'
+[LOG] HIT p0
+[LOG] HIT p9
+[LOG] loadNode p9 keys=1
+[LOG] HIT p8
+[LOG] loadNode p8 keys=3
+[LOG] HIT p11
+[LOG] loadNode p11 keys=3
+[LOG] HIT p0
+[LOG] HIT p11
+[LOG] markDirty p11
+[LOG] WRITE p11 '11;1;1995,1995;8;null;3;10;378,356'
+[LOG] HIT p0
+[LOG] MISS p12 carregada
+[LOG] markDirty p12
+[LOG] WRITE p12 '12;1;1995,1995;8;null;11;10;52,27'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:13;rootId:9'
+[LOG] HIT p11
+[LOG] loadNode p11 keys=2
+[LOG] HIT p11
+[LOG] markDirty p11
+[LOG] WRITE p11 '11;1;1995,1995;8;null;3;12;378,356'
+[LOG] HIT p10
+[LOG] loadNode p10 keys=2
+[LOG] HIT p10
+[LOG] markDirty p10
+[LOG] WRITE p10 '10;1;1955,1995;8;null;12;7;769,7'
+[LOG] HIT p8
+[LOG] loadNode p8 keys=3
+[LOG] HIT p8
+[LOG] markDirty p8
+[LOG] WRITE p8 '8;0;1955,1955,1995,1995;9;5,10,3,12,11;null;null;'
+[LOG] HIT p8
+[LOG] markDirty p8
+[LOG] WRITE p8 '8;0;1955,1955;9;5,10,3;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] MISS p13 carregada
+[LOG] markDirty p13
+[LOG] WRITE p13 '13;0;1995;9;12,11;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:14;rootId:9'
+[LOG] HIT p12
+[LOG] loadNode p12 keys=2
+[LOG] HIT p12
+[LOG] markDirty p12
+[LOG] WRITE p12 '12;1;1995,1995;13;null;11;10;52,27'
+[LOG] HIT p11
+[LOG] loadNode p11 keys=2
+[LOG] HIT p11
+[LOG] markDirty p11
+[LOG] WRITE p11 '11;1;1995,1995;13;null;3;12;378,356'
+[LOG] HIT p9
+[LOG] loadNode p9 keys=1
+[LOG] HIT p9
+[LOG] markDirty p9
+[LOG] WRITE p9 '9;0;1955,1995;-1;4,8,13;null;null;'
+[LOG] HIT p0
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p13
+[LOG] loadNode p13 keys=1
+[LOG] HIT p11
+[LOG] loadNode p11 keys=2
+[LOG] HIT p11
+[LOG] markDirty p11
+[LOG] WRITE p11 '11;1;1995,1995,1995;13;null;3;12;628,378,356'
+[LOG] HIT p0
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p13
+[LOG] loadNode p13 keys=1
+[LOG] HIT p11
+[LOG] loadNode p11 keys=3
+[LOG] HIT p0
+[LOG] HIT p11
+[LOG] markDirty p11
+[LOG] WRITE p11 '11;1;1995,1995;13;null;3;12;771,628'
+[LOG] HIT p0
+[LOG] MISS p14 carregada
+[LOG] markDirty p14
+[LOG] WRITE p14 '14;1;1995,1995;13;null;11;12;378,356'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:15;rootId:9'
+[LOG] HIT p11
+[LOG] loadNode p11 keys=2
+[LOG] HIT p11
+[LOG] markDirty p11
+[LOG] WRITE p11 '11;1;1995,1995;13;null;3;14;771,628'
+[LOG] HIT p12
+[LOG] loadNode p12 keys=2
+[LOG] HIT p12
+[LOG] markDirty p12
+[LOG] WRITE p12 '12;1;1995,1995;13;null;14;10;52,27'
+[LOG] HIT p13
+[LOG] loadNode p13 keys=1
+[LOG] HIT p13
+[LOG] markDirty p13
+[LOG] WRITE p13 '13;0;1995,1995;9;12,14,11;null;null;'
+[LOG] HIT p0
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p13
+[LOG] loadNode p13 keys=2
+[LOG] HIT p11
+[LOG] loadNode p11 keys=2
+[LOG] HIT p11
+[LOG] markDirty p11
+[LOG] WRITE p11 '11;1;1995,1995,1995;13;null;3;14;860,771,628'
+[LOG] HIT p0
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p13
+[LOG] loadNode p13 keys=2
+[LOG] HIT p11
+[LOG] loadNode p11 keys=3
+[LOG] HIT p0
+[LOG] HIT p11
+[LOG] markDirty p11
+[LOG] WRITE p11 '11;1;1995,1995;13;null;3;14;981,860'
+[LOG] HIT p0
+[LOG] MISS p15 carregada
+[LOG] markDirty p15
+[LOG] WRITE p15 '15;1;1995,1995;13;null;11;14;771,628'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:16;rootId:9'
+[LOG] HIT p11
+[LOG] loadNode p11 keys=2
+[LOG] HIT p11
+[LOG] markDirty p11
+[LOG] WRITE p11 '11;1;1995,1995;13;null;3;15;981,860'
+[LOG] HIT p14
+[LOG] loadNode p14 keys=2
+[LOG] HIT p14
+[LOG] markDirty p14
+[LOG] WRITE p14 '14;1;1995,1995;13;null;15;12;378,356'
+[LOG] HIT p13
+[LOG] loadNode p13 keys=2
+[LOG] HIT p13
+[LOG] markDirty p13
+[LOG] WRITE p13 '13;0;1995,1995,1995;9;12,15,14,11;null;null;'
+[LOG] HIT p0
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p13
+[LOG] loadNode p13 keys=3
+[LOG] HIT p11
+[LOG] loadNode p11 keys=2
+[LOG] HIT p11
+[LOG] markDirty p11
+[LOG] WRITE p11 '11;1;1995,1995,1995;13;null;3;15;988,981,860'
+[LOG] HIT p0
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p4
+[LOG] loadNode p4 keys=2
+[LOG] HIT p2
+[LOG] loadNode p2 keys=2
+[LOG] HIT p2
+[LOG] markDirty p2
+[LOG] WRITE p2 '2;1;1913,1955,1955;4;null;null;3;1,530,385'
+[LOG] HIT p0
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p4
+[LOG] loadNode p4 keys=2
+[LOG] HIT p2
+[LOG] loadNode p2 keys=3
+[LOG] HIT p0
+[LOG] HIT p2
+[LOG] markDirty p2
+[LOG] WRITE p2 '2;1;1913,1913;4;null;null;3;8,1'
+[LOG] HIT p0
+[LOG] MISS p16 carregada
+[LOG] markDirty p16
+[LOG] WRITE p16 '16;1;1955,1955;4;null;2;3;530,385'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:17;rootId:9'
+[LOG] HIT p2
+[LOG] loadNode p2 keys=2
+[LOG] HIT p2
+[LOG] markDirty p2
+[LOG] WRITE p2 '2;1;1913,1913;4;null;null;16;8,1'
+[LOG] HIT p3
+[LOG] loadNode p3 keys=2
+[LOG] HIT p3
+[LOG] markDirty p3
+[LOG] WRITE p3 '3;1;1955,1955;8;null;16;11;986,978'
+[LOG] HIT p4
+[LOG] loadNode p4 keys=2
+[LOG] HIT p4
+[LOG] markDirty p4
+[LOG] WRITE p4 '4;0;1955,1955,1955;9;2,16,7,6;null;null;'
+[LOG] HIT p0
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p4
+[LOG] loadNode p4 keys=3
+[LOG] HIT p2
+[LOG] loadNode p2 keys=2
+[LOG] HIT p2
+[LOG] markDirty p2
+[LOG] WRITE p2 '2;1;1913,1913,1913;4;null;null;16;131,8,1'
+[LOG] HIT p0
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p4
+[LOG] loadNode p4 keys=3
+[LOG] HIT p2
+[LOG] loadNode p2 keys=3
+[LOG] HIT p0
+[LOG] HIT p2
+[LOG] markDirty p2
+[LOG] WRITE p2 '2;1;1913,1913;4;null;null;16;161,131'
+[LOG] HIT p0
+[LOG] MISS p17 carregada
+[LOG] markDirty p17
+[LOG] WRITE p17 '17;1;1913,1913;4;null;2;16;8,1'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:18;rootId:9'
+[LOG] HIT p2
+[LOG] loadNode p2 keys=2
+[LOG] HIT p2
+[LOG] markDirty p2
+[LOG] WRITE p2 '2;1;1913,1913;4;null;null;17;161,131'
+[LOG] HIT p16
+[LOG] loadNode p16 keys=2
+[LOG] HIT p16
+[LOG] markDirty p16
+[LOG] WRITE p16 '16;1;1955,1955;4;null;17;3;530,385'
+[LOG] HIT p4
+[LOG] loadNode p4 keys=3
+[LOG] HIT p4
+[LOG] markDirty p4
+[LOG] WRITE p4 '4;0;1913,1955,1955,1955;9;2,17,16,7,6;null;null;'
+[LOG] HIT p4
+[LOG] markDirty p4
+[LOG] WRITE p4 '4;0;1913,1955;9;2,17,16;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] MISS p18 carregada
+[LOG] markDirty p18
+[LOG] WRITE p18 '18;0;1955;9;7,6;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:19;rootId:9'
+[LOG] HIT p7
+[LOG] loadNode p7 keys=2
+[LOG] HIT p7
+[LOG] markDirty p7
+[LOG] WRITE p7 '7;1;1955,1955;18;null;10;6;750,734'
+[LOG] HIT p6
+[LOG] loadNode p6 keys=2
+[LOG] HIT p6
+[LOG] markDirty p6
+[LOG] WRITE p6 '6;1;1955,1955;18;null;7;5;666,592'
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p9
+[LOG] markDirty p9
+[LOG] WRITE p9 '9;0;1955,1955,1995;-1;4,18,8,13;null;null;'
+[LOG] HIT p0
+[LOG] HIT p9
+[LOG] loadNode p9 keys=3
+[LOG] HIT p4
+[LOG] loadNode p4 keys=2
+[LOG] HIT p17
+[LOG] loadNode p17 keys=2
+[LOG] HIT p17
+[LOG] markDirty p17
+[LOG] WRITE p17 '17;1;1913,1913,1913;4;null;2;16;172,8,1'
+[LOG] HIT p0
+[LOG] HIT p9
+[LOG] loadNode p9 keys=3
+[LOG] HIT p4
+[LOG] loadNode p4 keys=2
+[LOG] HIT p17
+[LOG] loadNode p17 keys=3
+[LOG] HIT p0
+[LOG] HIT p17
+[LOG] markDirty p17
+[LOG] WRITE p17 '17;1;1913,1913;4;null;2;16;179,172'
+[LOG] HIT p0
+[LOG] MISS p19 carregada
+[LOG] markDirty p19
+[LOG] WRITE p19 '19;1;1913,1913;4;null;17;16;8,1'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:20;rootId:9'
+[LOG] HIT p17
+[LOG] loadNode p17 keys=2
+[LOG] HIT p17
+[LOG] markDirty p17
+[LOG] WRITE p17 '17;1;1913,1913;4;null;2;19;179,172'
+[LOG] HIT p16
+[LOG] loadNode p16 keys=2
+[LOG] HIT p16
+[LOG] markDirty p16
+[LOG] WRITE p16 '16;1;1955,1955;4;null;19;3;530,385'
+[LOG] HIT p4
+[LOG] loadNode p4 keys=2
+[LOG] HIT p4
+[LOG] markDirty p4
+[LOG] WRITE p4 '4;0;1913,1913,1955;9;2,19,17,16;null;null;'
+[LOG] HIT p0
+[LOG] HIT p9
+[LOG] loadNode p9 keys=3
+[LOG] HIT p4
+[LOG] loadNode p4 keys=3
+[LOG] HIT p17
+[LOG] loadNode p17 keys=2
+[LOG] HIT p17
+[LOG] markDirty p17
+[LOG] WRITE p17 '17;1;1913,1913,1913;4;null;2;19;205,179,172'
+[LOG] HIT p0
+[LOG] HIT p9
+[LOG] loadNode p9 keys=3
+[LOG] HIT p4
+[LOG] loadNode p4 keys=3
+[LOG] HIT p17
+[LOG] loadNode p17 keys=3
+[LOG] HIT p0
+[LOG] HIT p17
+[LOG] markDirty p17
+[LOG] WRITE p17 '17;1;1913,1913;4;null;2;19;214,205'
+[LOG] HIT p0
+[LOG] MISS p20 carregada
+[LOG] markDirty p20
+[LOG] WRITE p20 '20;1;1913,1913;4;null;17;19;179,172'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:21;rootId:9'
+[LOG] HIT p17
+[LOG] loadNode p17 keys=2
+[LOG] HIT p17
+[LOG] markDirty p17
+[LOG] WRITE p17 '17;1;1913,1913;4;null;2;20;214,205'
+[LOG] HIT p19
+[LOG] loadNode p19 keys=2
+[LOG] HIT p19
+[LOG] markDirty p19
+[LOG] WRITE p19 '19;1;1913,1913;4;null;20;16;8,1'
+[LOG] HIT p4
+[LOG] loadNode p4 keys=3
+[LOG] HIT p4
+[LOG] markDirty p4
+[LOG] WRITE p4 '4;0;1913,1913,1913,1955;9;2,20,19,17,16;null;null;'
+[LOG] HIT p4
+[LOG] markDirty p4
+[LOG] WRITE p4 '4;0;1913,1913;9;2,20,19;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] MISS p21 carregada
+[LOG] markDirty p21
+[LOG] WRITE p21 '21;0;1955;9;17,16;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:22;rootId:9'
+[LOG] HIT p17
+[LOG] loadNode p17 keys=2
+[LOG] HIT p17
+[LOG] markDirty p17
+[LOG] WRITE p17 '17;1;1913,1913;21;null;2;20;214,205'
+[LOG] HIT p16
+[LOG] loadNode p16 keys=2
+[LOG] HIT p16
+[LOG] markDirty p16
+[LOG] WRITE p16 '16;1;1955,1955;21;null;19;3;530,385'
+[LOG] HIT p9
+[LOG] loadNode p9 keys=3
+[LOG] HIT p9
+[LOG] markDirty p9
+[LOG] WRITE p9 '9;0;1913,1955,1955,1995;-1;4,21,18,8,13;null;null;'
+[LOG] HIT p9
+[LOG] markDirty p9
+[LOG] WRITE p9 '9;0;1913,1955;-1;4,21,18;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] MISS p22 carregada
+[LOG] markDirty p22
+[LOG] WRITE p22 '22;0;1995;-1;8,13;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:23;rootId:9'
+[LOG] HIT p8
+[LOG] loadNode p8 keys=2
+[LOG] HIT p8
+[LOG] markDirty p8
+[LOG] WRITE p8 '8;0;1955,1955;22;5,10,3;null;null;'
+[LOG] HIT p13
+[LOG] loadNode p13 keys=3
+[LOG] HIT p13
+[LOG] markDirty p13
+[LOG] WRITE p13 '13;0;1995,1995,1995;22;12,15,14,11;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] MISS p23 carregada
+[LOG] markDirty p23
+[LOG] WRITE p23 '23;0;1955;-1;9,22;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:24;rootId:9'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:24;rootId:23'
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p9
+[LOG] markDirty p9
+[LOG] WRITE p9 '9;0;1913,1955;23;4,21,18;null;null;'
+[LOG] HIT p22
+[LOG] loadNode p22 keys=1
+[LOG] HIT p22
+[LOG] markDirty p22
+[LOG] WRITE p22 '22;0;1995;23;8,13;null;null;'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=1
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p21
+[LOG] loadNode p21 keys=1
+[LOG] HIT p17
+[LOG] loadNode p17 keys=2
+[LOG] HIT p17
+[LOG] markDirty p17
+[LOG] WRITE p17 '17;1;1913,1913,1913;21;null;2;20;492,214,205'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=1
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p21
+[LOG] loadNode p21 keys=1
+[LOG] HIT p17
+[LOG] loadNode p17 keys=3
+[LOG] HIT p0
+[LOG] HIT p17
+[LOG] markDirty p17
+[LOG] WRITE p17 '17;1;1913,1913;21;null;2;20;531,492'
+[LOG] HIT p0
+[LOG] MISS p24 carregada
+[LOG] markDirty p24
+[LOG] WRITE p24 '24;1;1913,1913;21;null;17;20;214,205'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:25;rootId:23'
+[LOG] HIT p17
+[LOG] loadNode p17 keys=2
+[LOG] HIT p17
+[LOG] markDirty p17
+[LOG] WRITE p17 '17;1;1913,1913;21;null;2;24;531,492'
+[LOG] HIT p20
+[LOG] loadNode p20 keys=2
+[LOG] HIT p20
+[LOG] markDirty p20
+[LOG] WRITE p20 '20;1;1913,1913;4;null;24;19;179,172'
+[LOG] HIT p21
+[LOG] loadNode p21 keys=1
+[LOG] HIT p21
+[LOG] markDirty p21
+[LOG] WRITE p21 '21;0;1913,1955;9;17,24,16;null;null;'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=1
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p21
+[LOG] loadNode p21 keys=2
+[LOG] HIT p24
+[LOG] loadNode p24 keys=2
+[LOG] HIT p24
+[LOG] markDirty p24
+[LOG] WRITE p24 '24;1;1913,1913,1913;21;null;17;20;640,214,205'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=1
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p21
+[LOG] loadNode p21 keys=2
+[LOG] HIT p24
+[LOG] loadNode p24 keys=3
+[LOG] HIT p0
+[LOG] HIT p24
+[LOG] markDirty p24
+[LOG] WRITE p24 '24;1;1913,1913;21;null;17;20;918,640'
+[LOG] HIT p0
+[LOG] MISS p25 carregada
+[LOG] markDirty p25
+[LOG] WRITE p25 '25;1;1913,1913;21;null;24;20;214,205'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:26;rootId:23'
+[LOG] HIT p24
+[LOG] loadNode p24 keys=2
+[LOG] HIT p24
+[LOG] markDirty p24
+[LOG] WRITE p24 '24;1;1913,1913;21;null;17;25;918,640'
+[LOG] HIT p20
+[LOG] loadNode p20 keys=2
+[LOG] HIT p20
+[LOG] markDirty p20
+[LOG] WRITE p20 '20;1;1913,1913;4;null;25;19;179,172'
+[LOG] HIT p21
+[LOG] loadNode p21 keys=2
+[LOG] HIT p21
+[LOG] markDirty p21
+[LOG] WRITE p21 '21;0;1913,1913,1955;9;17,25,24,16;null;null;'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=1
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p21
+[LOG] loadNode p21 keys=3
+[LOG] HIT p24
+[LOG] loadNode p24 keys=2
+[LOG] HIT p24
+[LOG] markDirty p24
+[LOG] WRITE p24 '24;1;1913,1913,1933;21;null;17;25;918,640,9'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=1
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p21
+[LOG] loadNode p21 keys=3
+[LOG] HIT p24
+[LOG] loadNode p24 keys=3
+[LOG] HIT p0
+[LOG] HIT p24
+[LOG] markDirty p24
+[LOG] WRITE p24 '24;1;1913,1913;21;null;17;25;918,640'
+[LOG] HIT p0
+[LOG] MISS p26 carregada
+[LOG] markDirty p26
+[LOG] WRITE p26 '26;1;1933,1933;21;null;24;25;676,9'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:27;rootId:23'
+[LOG] HIT p24
+[LOG] loadNode p24 keys=2
+[LOG] HIT p24
+[LOG] markDirty p24
+[LOG] WRITE p24 '24;1;1913,1913;21;null;17;26;918,640'
+[LOG] HIT p25
+[LOG] loadNode p25 keys=2
+[LOG] HIT p25
+[LOG] markDirty p25
+[LOG] WRITE p25 '25;1;1913,1913;21;null;26;20;214,205'
+[LOG] HIT p21
+[LOG] loadNode p21 keys=3
+[LOG] HIT p21
+[LOG] markDirty p21
+[LOG] WRITE p21 '21;0;1913,1913,1933,1955;9;17,25,24,26,16;null;null;'
+[LOG] HIT p21
+[LOG] markDirty p21
+[LOG] WRITE p21 '21;0;1913,1913;9;17,25,24;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] MISS p27 carregada
+[LOG] markDirty p27
+[LOG] WRITE p27 '27;0;1955;9;26,16;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:28;rootId:23'
+[LOG] HIT p26
+[LOG] loadNode p26 keys=2
+[LOG] HIT p26
+[LOG] markDirty p26
+[LOG] WRITE p26 '26;1;1933,1933;27;null;24;25;676,9'
+[LOG] HIT p16
+[LOG] loadNode p16 keys=2
+[LOG] HIT p16
+[LOG] markDirty p16
+[LOG] WRITE p16 '16;1;1955,1955;27;null;19;3;530,385'
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p9
+[LOG] markDirty p9
+[LOG] WRITE p9 '9;0;1913,1933,1955;23;4,21,27,18;null;null;'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=1
+[LOG] HIT p9
+[LOG] loadNode p9 keys=3
+[LOG] HIT p27
+[LOG] loadNode p27 keys=1
+[LOG] HIT p26
+[LOG] loadNode p26 keys=2
+[LOG] HIT p26
+[LOG] markDirty p26
+[LOG] WRITE p26 '26;1;1933,1933,1933;27;null;24;25;721,676,9'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=1
+[LOG] HIT p9
+[LOG] loadNode p9 keys=3
+[LOG] HIT p27
+[LOG] loadNode p27 keys=1
+[LOG] HIT p26
+[LOG] loadNode p26 keys=3
+[LOG] HIT p0
+[LOG] HIT p26
+[LOG] markDirty p26
+[LOG] WRITE p26 '26;1;1933,1933;27;null;24;25;877,721'
+[LOG] HIT p0
+[LOG] MISS p28 carregada
+[LOG] markDirty p28
+[LOG] WRITE p28 '28;1;1933,1933;27;null;26;25;676,9'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:29;rootId:23'
+[LOG] HIT p26
+[LOG] loadNode p26 keys=2
+[LOG] HIT p26
+[LOG] markDirty p26
+[LOG] WRITE p26 '26;1;1933,1933;27;null;24;28;877,721'
+[LOG] HIT p25
+[LOG] loadNode p25 keys=2
+[LOG] HIT p25
+[LOG] markDirty p25
+[LOG] WRITE p25 '25;1;1913,1913;21;null;28;20;214,205'
+[LOG] HIT p27
+[LOG] loadNode p27 keys=1
+[LOG] HIT p27
+[LOG] markDirty p27
+[LOG] WRITE p27 '27;0;1933,1955;9;26,28,16;null;null;'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=1
+[LOG] HIT p9
+[LOG] loadNode p9 keys=3
+[LOG] HIT p21
+[LOG] loadNode p21 keys=2
+[LOG] HIT p24
+[LOG] loadNode p24 keys=2
+[LOG] HIT p24
+[LOG] markDirty p24
+[LOG] WRITE p24 '24;1;1913,1913,1929;21;null;17;26;918,640,10'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=1
+[LOG] HIT p9
+[LOG] loadNode p9 keys=3
+[LOG] HIT p21
+[LOG] loadNode p21 keys=2
+[LOG] HIT p24
+[LOG] loadNode p24 keys=3
+[LOG] HIT p0
+[LOG] HIT p24
+[LOG] markDirty p24
+[LOG] WRITE p24 '24;1;1913,1913;21;null;17;26;918,640'
+[LOG] HIT p0
+[LOG] MISS p29 carregada
+[LOG] markDirty p29
+[LOG] WRITE p29 '29;1;1929,1929;21;null;24;26;99,10'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:30;rootId:23'
+[LOG] HIT p24
+[LOG] loadNode p24 keys=2
+[LOG] HIT p24
+[LOG] markDirty p24
+[LOG] WRITE p24 '24;1;1913,1913;21;null;17;29;918,640'
+[LOG] HIT p26
+[LOG] loadNode p26 keys=2
+[LOG] HIT p26
+[LOG] markDirty p26
+[LOG] WRITE p26 '26;1;1933,1933;27;null;29;28;877,721'
+[LOG] HIT p21
+[LOG] loadNode p21 keys=2
+[LOG] HIT p21
+[LOG] markDirty p21
+[LOG] WRITE p21 '21;0;1913,1913,1929;9;17,25,24,29;null;null;'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=1
+[LOG] HIT p9
+[LOG] loadNode p9 keys=3
+[LOG] HIT p21
+[LOG] loadNode p21 keys=3
+[LOG] HIT p29
+[LOG] loadNode p29 keys=2
+[LOG] HIT p29
+[LOG] markDirty p29
+[LOG] WRITE p29 '29;1;1929,1929,1929;21;null;24;26;248,99,10'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=1
+[LOG] HIT p9
+[LOG] loadNode p9 keys=3
+[LOG] HIT p21
+[LOG] loadNode p21 keys=3
+[LOG] HIT p29
+[LOG] loadNode p29 keys=3
+[LOG] HIT p0
+[LOG] HIT p29
+[LOG] markDirty p29
+[LOG] WRITE p29 '29;1;1929,1929;21;null;24;26;413,248'
+[LOG] HIT p0
+[LOG] MISS p30 carregada
+[LOG] markDirty p30
+[LOG] WRITE p30 '30;1;1929,1929;21;null;29;26;99,10'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:31;rootId:23'
+[LOG] HIT p29
+[LOG] loadNode p29 keys=2
+[LOG] HIT p29
+[LOG] markDirty p29
+[LOG] WRITE p29 '29;1;1929,1929;21;null;24;30;413,248'
+[LOG] HIT p26
+[LOG] loadNode p26 keys=2
+[LOG] HIT p26
+[LOG] markDirty p26
+[LOG] WRITE p26 '26;1;1933,1933;27;null;30;28;877,721'
+[LOG] HIT p21
+[LOG] loadNode p21 keys=3
+[LOG] HIT p21
+[LOG] markDirty p21
+[LOG] WRITE p21 '21;0;1913,1913,1929,1929;9;17,25,24,30,29;null;null;'
+[LOG] HIT p21
+[LOG] markDirty p21
+[LOG] WRITE p21 '21;0;1913,1913;9;17,25,24;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] MISS p31 carregada
+[LOG] markDirty p31
+[LOG] WRITE p31 '31;0;1929;9;30,29;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:32;rootId:23'
+[LOG] HIT p30
+[LOG] loadNode p30 keys=2
+[LOG] HIT p30
+[LOG] markDirty p30
+[LOG] WRITE p30 '30;1;1929,1929;31;null;29;26;99,10'
+[LOG] HIT p29
+[LOG] loadNode p29 keys=2
+[LOG] HIT p29
+[LOG] markDirty p29
+[LOG] WRITE p29 '29;1;1929,1929;31;null;24;30;413,248'
+[LOG] HIT p9
+[LOG] loadNode p9 keys=3
+[LOG] HIT p9
+[LOG] markDirty p9
+[LOG] WRITE p9 '9;0;1913,1929,1933,1955;23;4,21,31,27,18;null;null;'
+[LOG] HIT p9
+[LOG] markDirty p9
+[LOG] WRITE p9 '9;0;1913,1929;23;4,21,31;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] MISS p32 carregada
+[LOG] markDirty p32
+[LOG] WRITE p32 '32;0;1955;23;27,18;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:33;rootId:23'
+[LOG] HIT p27
+[LOG] loadNode p27 keys=2
+[LOG] HIT p27
+[LOG] markDirty p27
+[LOG] WRITE p27 '27;0;1933,1955;32;26,28,16;null;null;'
+[LOG] HIT p18
+[LOG] loadNode p18 keys=1
+[LOG] HIT p18
+[LOG] markDirty p18
+[LOG] WRITE p18 '18;0;1955;32;7,6;null;null;'
+[LOG] HIT p23
+[LOG] loadNode p23 keys=1
+[LOG] HIT p23
+[LOG] markDirty p23
+[LOG] WRITE p23 '23;0;1933,1955;-1;9,32,22;null;null;'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p31
+[LOG] loadNode p31 keys=1
+[LOG] HIT p29
+[LOG] loadNode p29 keys=2
+[LOG] HIT p29
+[LOG] markDirty p29
+[LOG] WRITE p29 '29;1;1929,1929,1929;31;null;24;30;461,413,248'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p31
+[LOG] loadNode p31 keys=1
+[LOG] HIT p29
+[LOG] loadNode p29 keys=3
+[LOG] HIT p0
+[LOG] HIT p29
+[LOG] markDirty p29
+[LOG] WRITE p29 '29;1;1929,1929;31;null;24;30;467,461'
+[LOG] HIT p0
+[LOG] MISS p33 carregada
+[LOG] markDirty p33
+[LOG] WRITE p33 '33;1;1929,1929;31;null;29;30;413,248'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:34;rootId:23'
+[LOG] HIT p29
+[LOG] loadNode p29 keys=2
+[LOG] HIT p29
+[LOG] markDirty p29
+[LOG] WRITE p29 '29;1;1929,1929;31;null;24;33;467,461'
+[LOG] HIT p30
+[LOG] loadNode p30 keys=2
+[LOG] HIT p30
+[LOG] markDirty p30
+[LOG] WRITE p30 '30;1;1929,1929;31;null;33;26;99,10'
+[LOG] HIT p31
+[LOG] loadNode p31 keys=1
+[LOG] HIT p31
+[LOG] markDirty p31
+[LOG] WRITE p31 '31;0;1929,1929;9;30,33,29;null;null;'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p31
+[LOG] loadNode p31 keys=2
+[LOG] HIT p29
+[LOG] loadNode p29 keys=2
+[LOG] HIT p29
+[LOG] markDirty p29
+[LOG] WRITE p29 '29;1;1929,1929,1929;31;null;24;33;611,467,461'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p31
+[LOG] loadNode p31 keys=2
+[LOG] HIT p29
+[LOG] loadNode p29 keys=3
+[LOG] HIT p0
+[LOG] HIT p29
+[LOG] markDirty p29
+[LOG] WRITE p29 '29;1;1929,1929;31;null;24;33;698,611'
+[LOG] HIT p0
+[LOG] MISS p34 carregada
+[LOG] markDirty p34
+[LOG] WRITE p34 '34;1;1929,1929;31;null;29;33;467,461'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:35;rootId:23'
+[LOG] HIT p29
+[LOG] loadNode p29 keys=2
+[LOG] HIT p29
+[LOG] markDirty p29
+[LOG] WRITE p29 '29;1;1929,1929;31;null;24;34;698,611'
+[LOG] HIT p33
+[LOG] loadNode p33 keys=2
+[LOG] HIT p33
+[LOG] markDirty p33
+[LOG] WRITE p33 '33;1;1929,1929;31;null;34;30;413,248'
+[LOG] HIT p31
+[LOG] loadNode p31 keys=2
+[LOG] HIT p31
+[LOG] markDirty p31
+[LOG] WRITE p31 '31;0;1929,1929,1929;9;30,34,33,29;null;null;'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p31
+[LOG] loadNode p31 keys=3
+[LOG] HIT p29
+[LOG] loadNode p29 keys=2
+[LOG] HIT p29
+[LOG] markDirty p29
+[LOG] WRITE p29 '29;1;1929,1929,1929;31;null;24;34;792,698,611'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p32
+[LOG] loadNode p32 keys=1
+[LOG] HIT p27
+[LOG] loadNode p27 keys=2
+[LOG] HIT p28
+[LOG] loadNode p28 keys=2
+[LOG] HIT p28
+[LOG] markDirty p28
+[LOG] WRITE p28 '28;1;1933,1933,1941;27;null;26;25;676,9,11'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p32
+[LOG] loadNode p32 keys=1
+[LOG] HIT p27
+[LOG] loadNode p27 keys=2
+[LOG] HIT p28
+[LOG] loadNode p28 keys=3
+[LOG] HIT p0
+[LOG] HIT p28
+[LOG] markDirty p28
+[LOG] WRITE p28 '28;1;1933,1933;27;null;26;25;676,9'
+[LOG] HIT p0
+[LOG] MISS p35 carregada
+[LOG] markDirty p35
+[LOG] WRITE p35 '35;1;1941,1941;27;null;28;25;12,11'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:36;rootId:23'
+[LOG] HIT p28
+[LOG] loadNode p28 keys=2
+[LOG] HIT p28
+[LOG] markDirty p28
+[LOG] WRITE p28 '28;1;1933,1933;27;null;26;35;676,9'
+[LOG] HIT p25
+[LOG] loadNode p25 keys=2
+[LOG] HIT p25
+[LOG] markDirty p25
+[LOG] WRITE p25 '25;1;1913,1913;21;null;35;20;214,205'
+[LOG] HIT p27
+[LOG] loadNode p27 keys=2
+[LOG] HIT p27
+[LOG] markDirty p27
+[LOG] WRITE p27 '27;0;1933,1941,1955;32;26,28,35,16;null;null;'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p32
+[LOG] loadNode p32 keys=1
+[LOG] HIT p27
+[LOG] loadNode p27 keys=3
+[LOG] HIT p35
+[LOG] loadNode p35 keys=2
+[LOG] HIT p35
+[LOG] markDirty p35
+[LOG] WRITE p35 '35;1;1941,1941,1941;27;null;28;25;202,12,11'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p32
+[LOG] loadNode p32 keys=1
+[LOG] HIT p27
+[LOG] loadNode p27 keys=3
+[LOG] HIT p35
+[LOG] loadNode p35 keys=3
+[LOG] HIT p0
+[LOG] HIT p35
+[LOG] markDirty p35
+[LOG] WRITE p35 '35;1;1941,1941;27;null;28;25;263,202'
+[LOG] HIT p0
+[LOG] MISS p36 carregada
+[LOG] markDirty p36
+[LOG] WRITE p36 '36;1;1941,1941;27;null;35;25;12,11'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:37;rootId:23'
+[LOG] HIT p35
+[LOG] loadNode p35 keys=2
+[LOG] HIT p35
+[LOG] markDirty p35
+[LOG] WRITE p35 '35;1;1941,1941;27;null;28;36;263,202'
+[LOG] HIT p25
+[LOG] loadNode p25 keys=2
+[LOG] HIT p25
+[LOG] markDirty p25
+[LOG] WRITE p25 '25;1;1913,1913;21;null;36;20;214,205'
+[LOG] HIT p27
+[LOG] loadNode p27 keys=3
+[LOG] HIT p27
+[LOG] markDirty p27
+[LOG] WRITE p27 '27;0;1933,1941,1941,1955;32;26,28,36,35,16;null;null;'
+[LOG] HIT p27
+[LOG] markDirty p27
+[LOG] WRITE p27 '27;0;1933,1941;32;26,28,36;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] MISS p37 carregada
+[LOG] markDirty p37
+[LOG] WRITE p37 '37;0;1955;32;35,16;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:38;rootId:23'
+[LOG] HIT p35
+[LOG] loadNode p35 keys=2
+[LOG] HIT p35
+[LOG] markDirty p35
+[LOG] WRITE p35 '35;1;1941,1941;37;null;28;36;263,202'
+[LOG] HIT p16
+[LOG] loadNode p16 keys=2
+[LOG] HIT p16
+[LOG] markDirty p16
+[LOG] WRITE p16 '16;1;1955,1955;37;null;19;3;530,385'
+[LOG] HIT p32
+[LOG] loadNode p32 keys=1
+[LOG] HIT p32
+[LOG] markDirty p32
+[LOG] WRITE p32 '32;0;1941,1955;23;27,37,18;null;null;'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p32
+[LOG] loadNode p32 keys=2
+[LOG] HIT p37
+[LOG] loadNode p37 keys=1
+[LOG] HIT p35
+[LOG] loadNode p35 keys=2
+[LOG] HIT p35
+[LOG] markDirty p35
+[LOG] WRITE p35 '35;1;1941,1941,1941;37;null;28;36;332,263,202'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p32
+[LOG] loadNode p32 keys=2
+[LOG] HIT p37
+[LOG] loadNode p37 keys=1
+[LOG] HIT p35
+[LOG] loadNode p35 keys=3
+[LOG] HIT p0
+[LOG] HIT p35
+[LOG] markDirty p35
+[LOG] WRITE p35 '35;1;1941,1941;37;null;28;36;624,332'
+[LOG] HIT p0
+[LOG] MISS p38 carregada
+[LOG] markDirty p38
+[LOG] WRITE p38 '38;1;1941,1941;37;null;35;36;263,202'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:39;rootId:23'
+[LOG] HIT p35
+[LOG] loadNode p35 keys=2
+[LOG] HIT p35
+[LOG] markDirty p35
+[LOG] WRITE p35 '35;1;1941,1941;37;null;28;38;624,332'
+[LOG] HIT p36
+[LOG] loadNode p36 keys=2
+[LOG] HIT p36
+[LOG] markDirty p36
+[LOG] WRITE p36 '36;1;1941,1941;27;null;38;25;12,11'
+[LOG] HIT p37
+[LOG] loadNode p37 keys=1
+[LOG] HIT p37
+[LOG] markDirty p37
+[LOG] WRITE p37 '37;0;1941,1955;32;35,38,16;null;null;'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p32
+[LOG] loadNode p32 keys=2
+[LOG] HIT p37
+[LOG] loadNode p37 keys=2
+[LOG] HIT p38
+[LOG] loadNode p38 keys=2
+[LOG] HIT p38
+[LOG] markDirty p38
+[LOG] WRITE p38 '38;1;1941,1941,1941;37;null;35;36;700,263,202'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p32
+[LOG] loadNode p32 keys=2
+[LOG] HIT p37
+[LOG] loadNode p37 keys=2
+[LOG] HIT p38
+[LOG] loadNode p38 keys=3
+[LOG] HIT p0
+[LOG] HIT p38
+[LOG] markDirty p38
+[LOG] WRITE p38 '38;1;1941,1941;37;null;35;36;774,700'
+[LOG] HIT p0
+[LOG] MISS p39 carregada
+[LOG] markDirty p39
+[LOG] WRITE p39 '39;1;1941,1941;37;null;38;36;263,202'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:40;rootId:23'
+[LOG] HIT p38
+[LOG] loadNode p38 keys=2
+[LOG] HIT p38
+[LOG] markDirty p38
+[LOG] WRITE p38 '38;1;1941,1941;37;null;35;39;774,700'
+[LOG] HIT p36
+[LOG] loadNode p36 keys=2
+[LOG] HIT p36
+[LOG] markDirty p36
+[LOG] WRITE p36 '36;1;1941,1941;27;null;39;25;12,11'
+[LOG] HIT p37
+[LOG] loadNode p37 keys=2
+[LOG] HIT p37
+[LOG] markDirty p37
+[LOG] WRITE p37 '37;0;1941,1941,1955;32;35,39,38,16;null;null;'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p32
+[LOG] loadNode p32 keys=2
+[LOG] HIT p37
+[LOG] loadNode p37 keys=3
+[LOG] HIT p38
+[LOG] loadNode p38 keys=2
+[LOG] HIT p38
+[LOG] markDirty p38
+[LOG] WRITE p38 '38;1;1941,1941,1941;37;null;35;39;794,774,700'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p32
+[LOG] loadNode p32 keys=2
+[LOG] HIT p37
+[LOG] loadNode p37 keys=3
+[LOG] HIT p38
+[LOG] loadNode p38 keys=3
+[LOG] HIT p0
+[LOG] HIT p38
+[LOG] markDirty p38
+[LOG] WRITE p38 '38;1;1941,1941;37;null;35;39;916,794'
+[LOG] HIT p0
+[LOG] MISS p40 carregada
+[LOG] markDirty p40
+[LOG] WRITE p40 '40;1;1941,1941;37;null;38;39;774,700'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:41;rootId:23'
+[LOG] HIT p38
+[LOG] loadNode p38 keys=2
+[LOG] HIT p38
+[LOG] markDirty p38
+[LOG] WRITE p38 '38;1;1941,1941;37;null;35;40;916,794'
+[LOG] HIT p39
+[LOG] loadNode p39 keys=2
+[LOG] HIT p39
+[LOG] markDirty p39
+[LOG] WRITE p39 '39;1;1941,1941;37;null;40;36;263,202'
+[LOG] HIT p37
+[LOG] loadNode p37 keys=3
+[LOG] HIT p37
+[LOG] markDirty p37
+[LOG] WRITE p37 '37;0;1941,1941,1941,1955;32;35,40,39,38,16;null;null;'
+[LOG] HIT p37
+[LOG] markDirty p37
+[LOG] WRITE p37 '37;0;1941,1941;32;35,40,39;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] MISS p41 carregada
+[LOG] markDirty p41
+[LOG] WRITE p41 '41;0;1955;32;38,16;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:42;rootId:23'
+[LOG] HIT p38
+[LOG] loadNode p38 keys=2
+[LOG] HIT p38
+[LOG] markDirty p38
+[LOG] WRITE p38 '38;1;1941,1941;41;null;35;40;916,794'
+[LOG] HIT p16
+[LOG] loadNode p16 keys=2
+[LOG] HIT p16
+[LOG] markDirty p16
+[LOG] WRITE p16 '16;1;1955,1955;41;null;19;3;530,385'
+[LOG] HIT p32
+[LOG] loadNode p32 keys=2
+[LOG] HIT p32
+[LOG] markDirty p32
+[LOG] WRITE p32 '32;0;1941,1941,1955;23;27,41,37,18;null;null;'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p32
+[LOG] loadNode p32 keys=3
+[LOG] HIT p37
+[LOG] loadNode p37 keys=2
+[LOG] HIT p39
+[LOG] loadNode p39 keys=2
+[LOG] HIT p39
+[LOG] markDirty p39
+[LOG] WRITE p39 '39;1;1941,1941,1941;37;null;40;36;958,263,202'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p32
+[LOG] loadNode p32 keys=3
+[LOG] HIT p37
+[LOG] loadNode p37 keys=2
+[LOG] HIT p39
+[LOG] loadNode p39 keys=3
+[LOG] HIT p0
+[LOG] HIT p39
+[LOG] markDirty p39
+[LOG] WRITE p39 '39;1;1941,1941;37;null;40;36;963,958'
+[LOG] HIT p0
+[LOG] MISS p42 carregada
+[LOG] markDirty p42
+[LOG] WRITE p42 '42;1;1941,1941;37;null;39;36;263,202'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:43;rootId:23'
+[LOG] HIT p39
+[LOG] loadNode p39 keys=2
+[LOG] HIT p39
+[LOG] markDirty p39
+[LOG] WRITE p39 '39;1;1941,1941;37;null;40;42;963,958'
+[LOG] HIT p36
+[LOG] loadNode p36 keys=2
+[LOG] HIT p36
+[LOG] markDirty p36
+[LOG] WRITE p36 '36;1;1941,1941;27;null;42;25;12,11'
+[LOG] HIT p37
+[LOG] loadNode p37 keys=2
+[LOG] HIT p37
+[LOG] markDirty p37
+[LOG] WRITE p37 '37;0;1941,1941,1941;32;35,42,40,39;null;null;'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p21
+[LOG] loadNode p21 keys=2
+[LOG] HIT p24
+[LOG] loadNode p24 keys=2
+[LOG] HIT p24
+[LOG] markDirty p24
+[LOG] WRITE p24 '24;1;1913,1913,1928;21;null;17;29;918,640,13'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p21
+[LOG] loadNode p21 keys=2
+[LOG] HIT p24
+[LOG] loadNode p24 keys=3
+[LOG] HIT p0
+[LOG] HIT p24
+[LOG] markDirty p24
+[LOG] WRITE p24 '24;1;1913,1913;21;null;17;29;918,640'
+[LOG] HIT p0
+[LOG] MISS p43 carregada
+[LOG] markDirty p43
+[LOG] WRITE p43 '43;1;1928,1928;21;null;24;29;21,13'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:44;rootId:23'
+[LOG] HIT p24
+[LOG] loadNode p24 keys=2
+[LOG] HIT p24
+[LOG] markDirty p24
+[LOG] WRITE p24 '24;1;1913,1913;21;null;17;43;918,640'
+[LOG] HIT p29
+[LOG] loadNode p29 keys=3
+[LOG] HIT p29
+[LOG] markDirty p29
+[LOG] WRITE p29 '29;1;1929,1929,1929;31;null;43;34;792,698,611'
+[LOG] HIT p21
+[LOG] loadNode p21 keys=2
+[LOG] HIT p21
+[LOG] markDirty p21
+[LOG] WRITE p21 '21;0;1913,1913,1928;9;17,25,24,43;null;null;'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p21
+[LOG] loadNode p21 keys=3
+[LOG] HIT p43
+[LOG] loadNode p43 keys=2
+[LOG] HIT p43
+[LOG] markDirty p43
+[LOG] WRITE p43 '43;1;1928,1928,1928;21;null;24;29;118,21,13'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p21
+[LOG] loadNode p21 keys=3
+[LOG] HIT p43
+[LOG] loadNode p43 keys=3
+[LOG] HIT p0
+[LOG] HIT p43
+[LOG] markDirty p43
+[LOG] WRITE p43 '43;1;1928,1928;21;null;24;29;121,118'
+[LOG] HIT p0
+[LOG] MISS p44 carregada
+[LOG] markDirty p44
+[LOG] WRITE p44 '44;1;1928,1928;21;null;43;29;21,13'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:45;rootId:23'
+[LOG] HIT p43
+[LOG] loadNode p43 keys=2
+[LOG] HIT p43
+[LOG] markDirty p43
+[LOG] WRITE p43 '43;1;1928,1928;21;null;24;44;121,118'
+[LOG] HIT p29
+[LOG] loadNode p29 keys=3
+[LOG] HIT p29
+[LOG] markDirty p29
+[LOG] WRITE p29 '29;1;1929,1929,1929;31;null;44;34;792,698,611'
+[LOG] HIT p21
+[LOG] loadNode p21 keys=3
+[LOG] HIT p21
+[LOG] markDirty p21
+[LOG] WRITE p21 '21;0;1913,1913,1928,1928;9;17,25,24,44,43;null;null;'
+[LOG] HIT p21
+[LOG] markDirty p21
+[LOG] WRITE p21 '21;0;1913,1913;9;17,25,24;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] MISS p45 carregada
+[LOG] markDirty p45
+[LOG] WRITE p45 '45;0;1928;9;44,43;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:46;rootId:23'
+[LOG] HIT p44
+[LOG] loadNode p44 keys=2
+[LOG] HIT p44
+[LOG] markDirty p44
+[LOG] WRITE p44 '44;1;1928,1928;45;null;43;29;21,13'
+[LOG] HIT p43
+[LOG] loadNode p43 keys=2
+[LOG] HIT p43
+[LOG] markDirty p43
+[LOG] WRITE p43 '43;1;1928,1928;45;null;24;44;121,118'
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p9
+[LOG] markDirty p9
+[LOG] WRITE p9 '9;0;1913,1928,1929;23;4,21,45,31;null;null;'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p9
+[LOG] loadNode p9 keys=3
+[LOG] HIT p45
+[LOG] loadNode p45 keys=1
+[LOG] HIT p43
+[LOG] loadNode p43 keys=2
+[LOG] HIT p43
+[LOG] markDirty p43
+[LOG] WRITE p43 '43;1;1928,1928,1928;45;null;24;44;143,121,118'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p9
+[LOG] loadNode p9 keys=3
+[LOG] HIT p45
+[LOG] loadNode p45 keys=1
+[LOG] HIT p43
+[LOG] loadNode p43 keys=3
+[LOG] HIT p0
+[LOG] HIT p43
+[LOG] markDirty p43
+[LOG] WRITE p43 '43;1;1928,1928;45;null;24;44;230,143'
+[LOG] HIT p0
+[LOG] MISS p46 carregada
+[LOG] markDirty p46
+[LOG] WRITE p46 '46;1;1928,1928;45;null;43;44;121,118'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:47;rootId:23'
+[LOG] HIT p43
+[LOG] loadNode p43 keys=2
+[LOG] HIT p43
+[LOG] markDirty p43
+[LOG] WRITE p43 '43;1;1928,1928;45;null;24;46;230,143'
+[LOG] HIT p44
+[LOG] loadNode p44 keys=2
+[LOG] HIT p44
+[LOG] markDirty p44
+[LOG] WRITE p44 '44;1;1928,1928;45;null;46;29;21,13'
+[LOG] HIT p45
+[LOG] loadNode p45 keys=1
+[LOG] HIT p45
+[LOG] markDirty p45
+[LOG] WRITE p45 '45;0;1928,1928;9;44,46,43;null;null;'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p9
+[LOG] loadNode p9 keys=3
+[LOG] HIT p45
+[LOG] loadNode p45 keys=2
+[LOG] HIT p43
+[LOG] loadNode p43 keys=2
+[LOG] HIT p43
+[LOG] markDirty p43
+[LOG] WRITE p43 '43;1;1928,1928,1928;45;null;24;46;935,230,143'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p9
+[LOG] loadNode p9 keys=3
+[LOG] HIT p45
+[LOG] loadNode p45 keys=2
+[LOG] HIT p43
+[LOG] loadNode p43 keys=3
+[LOG] HIT p0
+[LOG] HIT p43
+[LOG] markDirty p43
+[LOG] WRITE p43 '43;1;1928,1928;45;null;24;46;950,935'
+[LOG] HIT p0
+[LOG] MISS p47 carregada
+[LOG] markDirty p47
+[LOG] WRITE p47 '47;1;1928,1928;45;null;43;46;230,143'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:48;rootId:23'
+[LOG] HIT p43
+[LOG] loadNode p43 keys=2
+[LOG] HIT p43
+[LOG] markDirty p43
+[LOG] WRITE p43 '43;1;1928,1928;45;null;24;47;950,935'
+[LOG] HIT p46
+[LOG] loadNode p46 keys=2
+[LOG] HIT p46
+[LOG] markDirty p46
+[LOG] WRITE p46 '46;1;1928,1928;45;null;47;44;121,118'
+[LOG] HIT p45
+[LOG] loadNode p45 keys=2
+[LOG] HIT p45
+[LOG] markDirty p45
+[LOG] WRITE p45 '45;0;1928,1928,1928;9;44,47,46,43;null;null;'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p9
+[LOG] loadNode p9 keys=3
+[LOG] HIT p21
+[LOG] loadNode p21 keys=2
+[LOG] HIT p24
+[LOG] loadNode p24 keys=2
+[LOG] HIT p24
+[LOG] markDirty p24
+[LOG] WRITE p24 '24;1;1913,1913,1916;21;null;17;43;918,640,14'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p9
+[LOG] loadNode p9 keys=3
+[LOG] HIT p21
+[LOG] loadNode p21 keys=2
+[LOG] HIT p24
+[LOG] loadNode p24 keys=3
+[LOG] HIT p0
+[LOG] HIT p24
+[LOG] markDirty p24
+[LOG] WRITE p24 '24;1;1913,1913;21;null;17;43;918,640'
+[LOG] HIT p0
+[LOG] MISS p48 carregada
+[LOG] markDirty p48
+[LOG] WRITE p48 '48;1;1916,1916;21;null;24;43;92,14'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:49;rootId:23'
+[LOG] HIT p24
+[LOG] loadNode p24 keys=2
+[LOG] HIT p24
+[LOG] markDirty p24
+[LOG] WRITE p24 '24;1;1913,1913;21;null;17;48;918,640'
+[LOG] HIT p43
+[LOG] loadNode p43 keys=2
+[LOG] HIT p43
+[LOG] markDirty p43
+[LOG] WRITE p43 '43;1;1928,1928;45;null;48;47;950,935'
+[LOG] HIT p21
+[LOG] loadNode p21 keys=2
+[LOG] HIT p21
+[LOG] markDirty p21
+[LOG] WRITE p21 '21;0;1913,1913,1916;9;17,25,24,48;null;null;'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p9
+[LOG] loadNode p9 keys=3
+[LOG] HIT p21
+[LOG] loadNode p21 keys=3
+[LOG] HIT p48
+[LOG] loadNode p48 keys=2
+[LOG] HIT p48
+[LOG] markDirty p48
+[LOG] WRITE p48 '48;1;1916,1916,1916;21;null;24;43;351,92,14'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p9
+[LOG] loadNode p9 keys=3
+[LOG] HIT p21
+[LOG] loadNode p21 keys=3
+[LOG] HIT p48
+[LOG] loadNode p48 keys=3
+[LOG] HIT p0
+[LOG] HIT p48
+[LOG] markDirty p48
+[LOG] WRITE p48 '48;1;1916,1916;21;null;24;43;560,351'
+[LOG] HIT p0
+[LOG] MISS p49 carregada
+[LOG] markDirty p49
+[LOG] WRITE p49 '49;1;1916,1916;21;null;48;43;92,14'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:50;rootId:23'
+[LOG] HIT p48
+[LOG] loadNode p48 keys=2
+[LOG] HIT p48
+[LOG] markDirty p48
+[LOG] WRITE p48 '48;1;1916,1916;21;null;24;49;560,351'
+[LOG] HIT p43
+[LOG] loadNode p43 keys=2
+[LOG] HIT p43
+[LOG] markDirty p43
+[LOG] WRITE p43 '43;1;1928,1928;45;null;49;47;950,935'
+[LOG] HIT p21
+[LOG] loadNode p21 keys=3
+[LOG] HIT p21
+[LOG] markDirty p21
+[LOG] WRITE p21 '21;0;1913,1913,1916,1916;9;17,25,24,49,48;null;null;'
+[LOG] HIT p21
+[LOG] markDirty p21
+[LOG] WRITE p21 '21;0;1913,1913;9;17,25,24;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] MISS p50 carregada
+[LOG] markDirty p50
+[LOG] WRITE p50 '50;0;1916;9;49,48;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:51;rootId:23'
+[LOG] HIT p49
+[LOG] loadNode p49 keys=2
+[LOG] HIT p49
+[LOG] markDirty p49
+[LOG] WRITE p49 '49;1;1916,1916;50;null;48;43;92,14'
+[LOG] HIT p48
+[LOG] loadNode p48 keys=2
+[LOG] HIT p48
+[LOG] markDirty p48
+[LOG] WRITE p48 '48;1;1916,1916;50;null;24;49;560,351'
+[LOG] HIT p9
+[LOG] loadNode p9 keys=3
+[LOG] HIT p9
+[LOG] markDirty p9
+[LOG] WRITE p9 '9;0;1913,1916,1928,1929;23;4,21,50,45,31;null;null;'
+[LOG] HIT p9
+[LOG] markDirty p9
+[LOG] WRITE p9 '9;0;1913,1916;23;4,21,50;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] MISS p51 carregada
+[LOG] markDirty p51
+[LOG] WRITE p51 '51;0;1929;23;45,31;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:52;rootId:23'
+[LOG] HIT p45
+[LOG] loadNode p45 keys=3
+[LOG] HIT p45
+[LOG] markDirty p45
+[LOG] WRITE p45 '45;0;1928,1928,1928;51;44,47,46,43;null;null;'
+[LOG] HIT p31
+[LOG] loadNode p31 keys=3
+[LOG] HIT p31
+[LOG] markDirty p31
+[LOG] WRITE p31 '31;0;1929,1929,1929;51;30,34,33,29;null;null;'
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p23
+[LOG] markDirty p23
+[LOG] WRITE p23 '23;0;1928,1933,1955;-1;9,51,32,22;null;null;'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=3
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p50
+[LOG] loadNode p50 keys=1
+[LOG] HIT p48
+[LOG] loadNode p48 keys=2
+[LOG] HIT p48
+[LOG] markDirty p48
+[LOG] WRITE p48 '48;1;1916,1916,1916;50;null;24;49;567,560,351'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=3
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p50
+[LOG] loadNode p50 keys=1
+[LOG] HIT p48
+[LOG] loadNode p48 keys=3
+[LOG] HIT p0
+[LOG] HIT p48
+[LOG] markDirty p48
+[LOG] WRITE p48 '48;1;1916,1916;50;null;24;49;664,567'
+[LOG] HIT p0
+[LOG] MISS p52 carregada
+[LOG] markDirty p52
+[LOG] WRITE p52 '52;1;1916,1916;50;null;48;49;560,351'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:53;rootId:23'
+[LOG] HIT p48
+[LOG] loadNode p48 keys=2
+[LOG] HIT p48
+[LOG] markDirty p48
+[LOG] WRITE p48 '48;1;1916,1916;50;null;24;52;664,567'
+[LOG] HIT p49
+[LOG] loadNode p49 keys=2
+[LOG] HIT p49
+[LOG] markDirty p49
+[LOG] WRITE p49 '49;1;1916,1916;50;null;52;43;92,14'
+[LOG] HIT p50
+[LOG] loadNode p50 keys=1
+[LOG] HIT p50
+[LOG] markDirty p50
+[LOG] WRITE p50 '50;0;1916,1916;9;49,52,48;null;null;'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=3
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p50
+[LOG] loadNode p50 keys=2
+[LOG] HIT p48
+[LOG] loadNode p48 keys=2
+[LOG] HIT p48
+[LOG] markDirty p48
+[LOG] WRITE p48 '48;1;1916,1916,1916;50;null;24;52;684,664,567'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=3
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p50
+[LOG] loadNode p50 keys=2
+[LOG] HIT p48
+[LOG] loadNode p48 keys=3
+[LOG] HIT p0
+[LOG] HIT p48
+[LOG] markDirty p48
+[LOG] WRITE p48 '48;1;1916,1916;50;null;24;52;816,684'
+[LOG] HIT p0
+[LOG] MISS p53 carregada
+[LOG] markDirty p53
+[LOG] WRITE p53 '53;1;1916,1916;50;null;48;52;664,567'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:54;rootId:23'
+[LOG] HIT p48
+[LOG] loadNode p48 keys=2
+[LOG] HIT p48
+[LOG] markDirty p48
+[LOG] WRITE p48 '48;1;1916,1916;50;null;24;53;816,684'
+[LOG] HIT p52
+[LOG] loadNode p52 keys=2
+[LOG] HIT p52
+[LOG] markDirty p52
+[LOG] WRITE p52 '52;1;1916,1916;50;null;53;49;560,351'
+[LOG] HIT p50
+[LOG] loadNode p50 keys=2
+[LOG] HIT p50
+[LOG] markDirty p50
+[LOG] WRITE p50 '50;0;1916,1916,1916;9;49,53,52,48;null;null;'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=3
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p4
+[LOG] loadNode p4 keys=2
+[LOG] HIT p2
+[LOG] loadNode p2 keys=2
+[LOG] HIT p2
+[LOG] markDirty p2
+[LOG] WRITE p2 '2;1;1912,1913,1913;4;null;null;17;15,161,131'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=3
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p4
+[LOG] loadNode p4 keys=2
+[LOG] HIT p2
+[LOG] loadNode p2 keys=3
+[LOG] HIT p0
+[LOG] HIT p2
+[LOG] markDirty p2
+[LOG] WRITE p2 '2;1;1912,1912;4;null;null;17;76,15'
+[LOG] HIT p0
+[LOG] MISS p54 carregada
+[LOG] markDirty p54
+[LOG] WRITE p54 '54;1;1913,1913;4;null;2;17;161,131'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:55;rootId:23'
+[LOG] HIT p2
+[LOG] loadNode p2 keys=2
+[LOG] HIT p2
+[LOG] markDirty p2
+[LOG] WRITE p2 '2;1;1912,1912;4;null;null;54;76,15'
+[LOG] HIT p17
+[LOG] loadNode p17 keys=2
+[LOG] HIT p17
+[LOG] markDirty p17
+[LOG] WRITE p17 '17;1;1913,1913;21;null;54;24;531,492'
+[LOG] HIT p4
+[LOG] loadNode p4 keys=2
+[LOG] HIT p4
+[LOG] markDirty p4
+[LOG] WRITE p4 '4;0;1913,1913,1913;9;2,54,20,19;null;null;'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=3
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p4
+[LOG] loadNode p4 keys=3
+[LOG] HIT p2
+[LOG] loadNode p2 keys=2
+[LOG] HIT p2
+[LOG] markDirty p2
+[LOG] WRITE p2 '2;1;1912,1912,1912;4;null;null;54;147,76,15'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=3
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p4
+[LOG] loadNode p4 keys=3
+[LOG] HIT p2
+[LOG] loadNode p2 keys=3
+[LOG] HIT p0
+[LOG] HIT p2
+[LOG] markDirty p2
+[LOG] WRITE p2 '2;1;1912,1912;4;null;null;54;297,147'
+[LOG] HIT p0
+[LOG] MISS p55 carregada
+[LOG] markDirty p55
+[LOG] WRITE p55 '55;1;1912,1912;4;null;2;54;76,15'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:56;rootId:23'
+[LOG] HIT p2
+[LOG] loadNode p2 keys=2
+[LOG] HIT p2
+[LOG] markDirty p2
+[LOG] WRITE p2 '2;1;1912,1912;4;null;null;55;297,147'
+[LOG] HIT p54
+[LOG] loadNode p54 keys=2
+[LOG] HIT p54
+[LOG] markDirty p54
+[LOG] WRITE p54 '54;1;1913,1913;4;null;55;17;161,131'
+[LOG] HIT p4
+[LOG] loadNode p4 keys=3
+[LOG] HIT p4
+[LOG] markDirty p4
+[LOG] WRITE p4 '4;0;1912,1913,1913,1913;9;2,55,54,20,19;null;null;'
+[LOG] HIT p4
+[LOG] markDirty p4
+[LOG] WRITE p4 '4;0;1912,1913;9;2,55,54;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] MISS p56 carregada
+[LOG] markDirty p56
+[LOG] WRITE p56 '56;0;1913;9;20,19;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:57;rootId:23'
+[LOG] HIT p20
+[LOG] loadNode p20 keys=2
+[LOG] HIT p20
+[LOG] markDirty p20
+[LOG] WRITE p20 '20;1;1913,1913;56;null;25;19;179,172'
+[LOG] HIT p19
+[LOG] loadNode p19 keys=2
+[LOG] HIT p19
+[LOG] markDirty p19
+[LOG] WRITE p19 '19;1;1913,1913;56;null;20;16;8,1'
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p9
+[LOG] markDirty p9
+[LOG] WRITE p9 '9;0;1913,1913,1916;23;4,56,21,50;null;null;'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=3
+[LOG] HIT p9
+[LOG] loadNode p9 keys=3
+[LOG] HIT p4
+[LOG] loadNode p4 keys=2
+[LOG] HIT p55
+[LOG] loadNode p55 keys=2
+[LOG] HIT p55
+[LOG] markDirty p55
+[LOG] WRITE p55 '55;1;1912,1912,1912;4;null;2;54;336,76,15'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=3
+[LOG] HIT p9
+[LOG] loadNode p9 keys=3
+[LOG] HIT p4
+[LOG] loadNode p4 keys=2
+[LOG] HIT p55
+[LOG] loadNode p55 keys=3
+[LOG] HIT p0
+[LOG] HIT p55
+[LOG] markDirty p55
+[LOG] WRITE p55 '55;1;1912,1912;4;null;2;54;423,336'
+[LOG] HIT p0
+[LOG] MISS p57 carregada
+[LOG] markDirty p57
+[LOG] WRITE p57 '57;1;1912,1912;4;null;55;54;76,15'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:58;rootId:23'
+[LOG] HIT p55
+[LOG] loadNode p55 keys=2
+[LOG] HIT p55
+[LOG] markDirty p55
+[LOG] WRITE p55 '55;1;1912,1912;4;null;2;57;423,336'
+[LOG] HIT p54
+[LOG] loadNode p54 keys=2
+[LOG] HIT p54
+[LOG] markDirty p54
+[LOG] WRITE p54 '54;1;1913,1913;4;null;57;17;161,131'
+[LOG] HIT p4
+[LOG] loadNode p4 keys=2
+[LOG] HIT p4
+[LOG] markDirty p4
+[LOG] WRITE p4 '4;0;1912,1912,1913;9;2,57,55,54;null;null;'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=3
+[LOG] HIT p9
+[LOG] loadNode p9 keys=3
+[LOG] HIT p4
+[LOG] loadNode p4 keys=3
+[LOG] HIT p55
+[LOG] loadNode p55 keys=2
+[LOG] HIT p55
+[LOG] markDirty p55
+[LOG] WRITE p55 '55;1;1912,1912,1912;4;null;2;57;436,423,336'
+[LOG] HIT p0
+[LOG] HIT p23
+[LOG] loadNode p23 keys=3
+[LOG] HIT p9
+[LOG] loadNode p9 keys=3
+[LOG] HIT p4
+[LOG] loadNode p4 keys=3
+[LOG] HIT p55
+[LOG] loadNode p55 keys=3
+[LOG] HIT p0
+[LOG] HIT p55
+[LOG] markDirty p55
+[LOG] WRITE p55 '55;1;1912,1912;4;null;2;57;527,436'
+[LOG] HIT p0
+[LOG] MISS p58 carregada
+[LOG] markDirty p58
+[LOG] WRITE p58 '58;1;1912,1912;4;null;55;57;423,336'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:59;rootId:23'
+[LOG] HIT p55
+[LOG] loadNode p55 keys=2
+[LOG] HIT p55
+[LOG] markDirty p55
+[LOG] WRITE p55 '55;1;1912,1912;4;null;2;58;527,436'
+[LOG] HIT p57
+[LOG] loadNode p57 keys=2
+[LOG] HIT p57
+[LOG] markDirty p57
+[LOG] WRITE p57 '57;1;1912,1912;4;null;58;54;76,15'
+[LOG] HIT p4
+[LOG] loadNode p4 keys=3
+[LOG] HIT p4
+[LOG] markDirty p4
+[LOG] WRITE p4 '4;0;1912,1912,1912,1913;9;2,58,57,55,54;null;null;'
+[LOG] HIT p4
+[LOG] markDirty p4
+[LOG] WRITE p4 '4;0;1912,1912;9;2,58,57;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] MISS p59 carregada
+[LOG] markDirty p59
+[LOG] WRITE p59 '59;0;1913;9;55,54;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:60;rootId:23'
+[LOG] HIT p55
+[LOG] loadNode p55 keys=2
+[LOG] HIT p55
+[LOG] markDirty p55
+[LOG] WRITE p55 '55;1;1912,1912;59;null;2;58;527,436'
+[LOG] HIT p54
+[LOG] loadNode p54 keys=2
+[LOG] HIT p54
+[LOG] markDirty p54
+[LOG] WRITE p54 '54;1;1913,1913;59;null;57;17;161,131'
+[LOG] HIT p9
+[LOG] loadNode p9 keys=3
+[LOG] HIT p9
+[LOG] markDirty p9
+[LOG] WRITE p9 '9;0;1912,1913,1913,1916;23;4,59,56,21,50;null;null;'
+[LOG] HIT p9
+[LOG] markDirty p9
+[LOG] WRITE p9 '9;0;1912,1913;23;4,59,56;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] MISS p60 carregada
+[LOG] markDirty p60
+[LOG] WRITE p60 '60;0;1916;23;21,50;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:61;rootId:23'
+[LOG] HIT p21
+[LOG] loadNode p21 keys=2
+[LOG] HIT p21
+[LOG] markDirty p21
+[LOG] WRITE p21 '21;0;1913,1913;60;17,25,24;null;null;'
+[LOG] HIT p50
+[LOG] loadNode p50 keys=3
+[LOG] HIT p50
+[LOG] markDirty p50
+[LOG] WRITE p50 '50;0;1916,1916,1916;60;49,53,52,48;null;null;'
+[LOG] HIT p23
+[LOG] loadNode p23 keys=3
+[LOG] HIT p23
+[LOG] markDirty p23
+[LOG] WRITE p23 '23;0;1913,1928,1933,1955;-1;9,60,51,32,22;null;null;'
+[LOG] HIT p23
+[LOG] markDirty p23
+[LOG] WRITE p23 '23;0;1913,1928;-1;9,60,51;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] MISS p61 carregada
+[LOG] markDirty p61
+[LOG] WRITE p61 '61;0;1955;-1;32,22;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:62;rootId:23'
+[LOG] HIT p32
+[LOG] loadNode p32 keys=3
+[LOG] HIT p32
+[LOG] markDirty p32
+[LOG] WRITE p32 '32;0;1941,1941,1955;61;27,41,37,18;null;null;'
+[LOG] HIT p22
+[LOG] loadNode p22 keys=1
+[LOG] HIT p22
+[LOG] markDirty p22
+[LOG] WRITE p22 '22;0;1995;61;8,13;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] MISS p62 carregada
+[LOG] markDirty p62
+[LOG] WRITE p62 '62;0;1933;-1;23,61;null;null;'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:63;rootId:23'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:63;rootId:62'
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p23
+[LOG] markDirty p23
+[LOG] WRITE p23 '23;0;1913,1928;62;9,60,51;null;null;'
+[LOG] HIT p61
+[LOG] loadNode p61 keys=1
+[LOG] HIT p61
+[LOG] markDirty p61
+[LOG] WRITE p61 '61;0;1955;62;32,22;null;null;'
+[LOG] HIT p0
+[LOG] HIT p62
+[LOG] loadNode p62 keys=1
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p59
+[LOG] loadNode p59 keys=1
+[LOG] HIT p55
+[LOG] loadNode p55 keys=2
+[LOG] HIT p55
+[LOG] markDirty p55
+[LOG] WRITE p55 '55;1;1912,1912,1912;59;null;2;58;889,527,436'
+[LOG] HIT p0
+[LOG] HIT p62
+[LOG] loadNode p62 keys=1
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p59
+[LOG] loadNode p59 keys=1
+[LOG] HIT p55
+[LOG] loadNode p55 keys=3
+[LOG] HIT p0
+[LOG] HIT p55
+[LOG] markDirty p55
+[LOG] WRITE p55 '55;1;1912,1912;59;null;2;58;967,889'
+[LOG] HIT p0
+[LOG] MISS p63 carregada
+[LOG] markDirty p63
+[LOG] WRITE p63 '63;1;1912,1912;59;null;55;58;527,436'
+[LOG] HIT p0
+[LOG] HIT p0
+[LOG] markDirty p0
+[LOG] WRITE p0 'nextId:64;rootId:62'
+[LOG] HIT p55
+[LOG] loadNode p55 keys=2
+[LOG] HIT p55
+[LOG] markDirty p55
+[LOG] WRITE p55 '55;1;1912,1912;59;null;2;63;967,889'
+[LOG] HIT p58
+[LOG] loadNode p58 keys=2
+[LOG] HIT p58
+[LOG] markDirty p58
+[LOG] WRITE p58 '58;1;1912,1912;4;null;63;57;423,336'
+[LOG] HIT p59
+[LOG] loadNode p59 keys=1
+[LOG] HIT p59
+[LOG] markDirty p59
+[LOG] WRITE p59 '59;0;1912,1913;9;55,63,54;null;null;'
+[LOG] HIT p0
+[LOG] HIT p62
+[LOG] loadNode p62 keys=1
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p4
+[LOG] loadNode p4 keys=2
+[LOG] HIT p2
+[LOG] loadNode p2 keys=2
+[LOG] HIT p55
+[LOG] loadNode p55 keys=2
+[LOG] HIT p63
+[LOG] loadNode p63 keys=2
+[LOG] HIT p58
+[LOG] loadNode p58 keys=2
+[LOG] HIT p57
+[LOG] loadNode p57 keys=2
+[LOG] HIT p54
+[LOG] loadNode p54 keys=2
+[LOG] HIT p17
+[LOG] loadNode p17 keys=2
+[LOG] HIT p0
+[LOG] HIT p62
+[LOG] loadNode p62 keys=1
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p59
+[LOG] loadNode p59 keys=2
+[LOG] HIT p63
+[LOG] loadNode p63 keys=2
+[LOG] HIT p58
+[LOG] loadNode p58 keys=2
+[LOG] HIT p57
+[LOG] loadNode p57 keys=2
+[LOG] HIT p54
+[LOG] loadNode p54 keys=2
+[LOG] HIT p17
+[LOG] loadNode p17 keys=2
+[LOG] HIT p24
+[LOG] loadNode p24 keys=2
+[LOG] HIT p48
+[LOG] loadNode p48 keys=2
+[LOG] HIT p53
+[LOG] loadNode p53 keys=2
+[LOG] HIT p0
+[LOG] HIT p62
+[LOG] loadNode p62 keys=1
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p60
+[LOG] loadNode p60 keys=1
+[LOG] HIT p21
+[LOG] loadNode p21 keys=2
+[LOG] HIT p24
+[LOG] loadNode p24 keys=2
+[LOG] HIT p48
+[LOG] loadNode p48 keys=2
+[LOG] HIT p53
+[LOG] loadNode p53 keys=2
+[LOG] HIT p52
+[LOG] loadNode p52 keys=2
+[LOG] HIT p49
+[LOG] loadNode p49 keys=2
+[LOG] HIT p43
+[LOG] loadNode p43 keys=2
+[LOG] HIT p47
+[LOG] loadNode p47 keys=2
+[LOG] HIT p0
+[LOG] HIT p62
+[LOG] loadNode p62 keys=1
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p60
+[LOG] loadNode p60 keys=1
+[LOG] HIT p50
+[LOG] loadNode p50 keys=3
+[LOG] HIT p48
+[LOG] loadNode p48 keys=2
+[LOG] HIT p53
+[LOG] loadNode p53 keys=2
+[LOG] HIT p52
+[LOG] loadNode p52 keys=2
+[LOG] HIT p49
+[LOG] loadNode p49 keys=2
+[LOG] HIT p43
+[LOG] loadNode p43 keys=2
+[LOG] HIT p47
+[LOG] loadNode p47 keys=2
+[LOG] HIT p46
+[LOG] loadNode p46 keys=2
+[LOG] HIT p44
+[LOG] loadNode p44 keys=2
+[LOG] HIT p29
+[LOG] loadNode p29 keys=3
+[LOG] HIT p34
+[LOG] loadNode p34 keys=2
+[LOG] HIT p0
+[LOG] HIT p62
+[LOG] loadNode p62 keys=1
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p51
+[LOG] loadNode p51 keys=1
+[LOG] HIT p45
+[LOG] loadNode p45 keys=3
+[LOG] HIT p43
+[LOG] loadNode p43 keys=2
+[LOG] HIT p47
+[LOG] loadNode p47 keys=2
+[LOG] HIT p46
+[LOG] loadNode p46 keys=2
+[LOG] HIT p44
+[LOG] loadNode p44 keys=2
+[LOG] HIT p29
+[LOG] loadNode p29 keys=3
+[LOG] HIT p34
+[LOG] loadNode p34 keys=2
+[LOG] HIT p33
+[LOG] loadNode p33 keys=2
+[LOG] HIT p30
+[LOG] loadNode p30 keys=2
+[LOG] HIT p26
+[LOG] loadNode p26 keys=2
+[LOG] HIT p28
+[LOG] loadNode p28 keys=2
+[LOG] HIT p0
+[LOG] HIT p62
+[LOG] loadNode p62 keys=1
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p51
+[LOG] loadNode p51 keys=1
+[LOG] HIT p31
+[LOG] loadNode p31 keys=3
+[LOG] HIT p29
+[LOG] loadNode p29 keys=3
+[LOG] HIT p34
+[LOG] loadNode p34 keys=2
+[LOG] HIT p33
+[LOG] loadNode p33 keys=2
+[LOG] HIT p30
+[LOG] loadNode p30 keys=2
+[LOG] HIT p26
+[LOG] loadNode p26 keys=2
+[LOG] HIT p28
+[LOG] loadNode p28 keys=2
+[LOG] HIT p35
+[LOG] loadNode p35 keys=2
+[LOG] HIT p38
+[LOG] loadNode p38 keys=2
+[LOG] HIT p0
+[LOG] HIT p62
+[LOG] loadNode p62 keys=1
+[LOG] HIT p61
+[LOG] loadNode p61 keys=1
+[LOG] HIT p32
+[LOG] loadNode p32 keys=3
+[LOG] HIT p27
+[LOG] loadNode p27 keys=2
+[LOG] HIT p28
+[LOG] loadNode p28 keys=2
+[LOG] HIT p35
+[LOG] loadNode p35 keys=2
+[LOG] HIT p38
+[LOG] loadNode p38 keys=2
+[LOG] HIT p40
+[LOG] loadNode p40 keys=2
+[LOG] HIT p39
+[LOG] loadNode p39 keys=2
+[LOG] HIT p42
+[LOG] loadNode p42 keys=2
+[LOG] HIT p36
+[LOG] loadNode p36 keys=2
+[LOG] HIT p25
+[LOG] loadNode p25 keys=2
+[LOG] HIT p20
+[LOG] loadNode p20 keys=2
+[LOG] HIT p19
+[LOG] loadNode p19 keys=2
+[LOG] HIT p16
+[LOG] loadNode p16 keys=2
+[LOG] HIT p3
+[LOG] loadNode p3 keys=2
+[LOG] HIT p0
+[LOG] HIT p62
+[LOG] loadNode p62 keys=1
+[LOG] HIT p61
+[LOG] loadNode p61 keys=1
+[LOG] HIT p32
+[LOG] loadNode p32 keys=3
+[LOG] HIT p37
+[LOG] loadNode p37 keys=3
+[LOG] HIT p39
+[LOG] loadNode p39 keys=2
+[LOG] HIT p42
+[LOG] loadNode p42 keys=2
+[LOG] HIT p36
+[LOG] loadNode p36 keys=2
+[LOG] HIT p25
+[LOG] loadNode p25 keys=2
+[LOG] HIT p20
+[LOG] loadNode p20 keys=2
+[LOG] HIT p19
+[LOG] loadNode p19 keys=2
+[LOG] HIT p16
+[LOG] loadNode p16 keys=2
+[LOG] HIT p3
+[LOG] loadNode p3 keys=2
+[LOG] HIT p11
+[LOG] loadNode p11 keys=3
+[LOG] HIT p15
+[LOG] loadNode p15 keys=2
+[LOG] HIT p0
+[LOG] HIT p62
+[LOG] loadNode p62 keys=1
+[LOG] HIT p23
+[LOG] loadNode p23 keys=2
+[LOG] HIT p9
+[LOG] loadNode p9 keys=2
+[LOG] HIT p4
+[LOG] loadNode p4 keys=2
+[LOG] HIT p2
+[LOG] loadNode p2 keys=2
+[LOG] Flush() chamado
+[LOG] flushAll()
+[LOG] flush p2
+[LOG] flush p4
+[LOG] flush p9
+[LOG] flush p23
+[LOG] flush p62
+[LOG] flush p0
+[LOG] flush p15
+[LOG] flush p11
+[LOG] flush p3
+[LOG] flush p16
+[LOG] flush p19
+[LOG] flush p20
+[LOG] flush p25
+[LOG] flush p36
+[LOG] flush p42
+[LOG] flush p39
+[LOG] flush p37
+[LOG] flush p32
+[LOG] flush p61
+[LOG] flush p40
+[LOG] flush p38
+[LOG] flush p35
+[LOG] flush p28
+[LOG] flush p27
+[LOG] flush p26
+[LOG] flush p30
+[LOG] flush p33
+[LOG] flush p34
+[LOG] flush p29
+[LOG] flush p31
+[LOG] flush p51
+[LOG] flush p44
+[LOG] flush p46
+[LOG] flush p47
+[LOG] flush p43
+[LOG] flush p45
+[LOG] flush p49
+[LOG] flush p52
+[LOG] flush p53
+[LOG] flush p48
+[LOG] flush p50
+[LOG] flush p60
+[LOG] flush p24
+[LOG] flush p21
+[LOG] flush p17
+[LOG] flush p54
+[LOG] flush p57
+[LOG] flush p58
+[LOG] flush p63
+[LOG] flush p59
+[LOG] flush p55
+[LOG] flush p22
+[LOG] flush p56
+[LOG] flush p41
+[LOG] flush p18
+[LOG] flush p13
+[LOG] flush p8
+[LOG] flush p6
+[LOG] flush p7
+[LOG] flush p14
+[LOG] flush p12
+[LOG] flush p10
+[LOG] flush p5
+[LOG] flush p1
+[LOG] Flush() chamado
+[LOG] flushAll()
+[LOG] flushAll()

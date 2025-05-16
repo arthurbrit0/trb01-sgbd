@@ -1,6 +1,7 @@
 #ifndef BUFFER_MANAGER_H
 #define BUFFER_MANAGER_H
 
+#include "log.h"
 #include <string>
 #include <unordered_map>
 #include <list>
@@ -10,98 +11,106 @@
 class BufferManager {
 public:
     struct Frame {
-        int pageId;         // ID da página (número da linha no arquivo binário)
-        bool dirty;         // se conteúdo foi modificado e precisa ser escrito
-        std::string data;   // buffer com o conteúdo da página
+        int         pageId;
+        bool        dirty;
+        std::string data;
     };
 
-    // path: arquivo de índice ou dados
-    // pageSize: tamanho fixo da página em bytes (p.ex. calculado em tree_index)
-    // capacity: número máximo de frames em buffer
-    BufferManager(const std::string& path, size_t pageSize, size_t capacity)
-        : filePath(path), pageSize(pageSize), capacity(capacity) {
+    BufferManager(const std::string& path,
+                  size_t pageSize,
+                  size_t capacity)
+        : filePath(path),
+          pageSize(pageSize),
+          capacity(capacity) {
+
         fileStream.open(filePath, std::ios::in | std::ios::out | std::ios::binary);
+        if (!fileStream) {
+            LOG("Arquivo inexistente, criando: " << filePath);
+            std::ofstream newFile(filePath, std::ios::binary);
+            newFile.close();
+            fileStream.open(filePath, std::ios::in | std::ios::out | std::ios::binary);
+        }
         if (!fileStream)
-            throw std::runtime_error("Não foi possível abrir arquivo: " + filePath);
+            throw std::runtime_error("Nao foi possivel abrir: " + filePath);
+
+        LOG("BufferManager OK (pageSize=" << pageSize
+            << ", cap=" << capacity << ')');
     }
 
-    ~BufferManager() {
-        flushAll();
-        if (fileStream.is_open()) fileStream.close();
-    }
+    ~BufferManager() { flushAll(); }
 
-    // Retorna referência ao conteúdo da página (traz para buffer se ausente)
+    /* devolve referência (std::string&) à página pedida */
     std::string& getPage(int pageId) {
         auto it = pageTable.find(pageId);
-        if (it != pageTable.end()) {
-            // Move frame para a frente (MRU)
+        if (it != pageTable.end()) {                   // HIT
             buffer.splice(buffer.begin(), buffer, it->second);
+            LOG("HIT p" << pageId);
             return it->second->data;
         }
-        // novo frame: evict se necessário
-        evictIfNeeded();
-        Frame frame;
-        frame.pageId = pageId;
-        frame.dirty = false;
-        frame.data.resize(pageSize);
-        fileStream.seekg((std::streamoff)pageId * pageSize);
-        fileStream.read(&frame.data[0], pageSize);
-        buffer.push_front(frame);
+
+        evictIfNeeded();                              // MISS
+        Frame f;
+        f.pageId = pageId;
+        f.dirty  = false;
+        f.data.assign(pageSize, ' ');
+
+        fileStream.clear();                           // <-- limpa bits de erro
+        fileStream.seekg(static_cast<std::streamoff>(pageId) * pageSize);
+        fileStream.read(&f.data[0], pageSize);
+
+        buffer.push_front(std::move(f));
         pageTable[pageId] = buffer.begin();
+        LOG("MISS p" << pageId << " carregada");
         return buffer.begin()->data;
     }
 
-    // Marca página como suja (modificada)
     void markDirty(int pageId) {
         auto it = pageTable.find(pageId);
         if (it != pageTable.end()) {
             it->second->dirty = true;
             buffer.splice(buffer.begin(), buffer, it->second);
+            LOG("markDirty p" << pageId);
         }
     }
 
-    // Grava uma página suja de volta no disco
-    void flushPage(int pageId) {
-        auto it = pageTable.find(pageId);
-        if (it != pageTable.end() && it->second->dirty) {
-            fileStream.seekp((std::streamoff)pageId * pageSize);
-            fileStream.write(it->second->data.data(), pageSize);
-            it->second->dirty = false;
-        }
-    }
-
-    // Grava todas as páginas sujas no disco
     void flushAll() {
-        for (auto& frame : buffer) {
-            if (frame.dirty) {
-                fileStream.seekp((std::streamoff)frame.pageId * pageSize);
-                fileStream.write(frame.data.data(), pageSize);
-                frame.dirty = false;
+        LOG("flushAll()");
+        for (auto& f : buffer) {
+            if (f.dirty) {
+                fileStream.clear();                   // <-- limpa flags
+                fileStream.seekp(static_cast<std::streamoff>(f.pageId) * pageSize);
+                fileStream.write(f.data.data(), pageSize);
+                LOG("flush p" << f.pageId);
+                f.dirty = false;
             }
         }
+        fileStream.flush();
     }
 
 private:
+    void evictIfNeeded() {
+        if (buffer.size() < capacity) return;
+
+        Frame& v = buffer.back();
+        LOG("Evict p" << v.pageId << (v.dirty ? " (dirty)" : " (clean)"));
+
+        if (v.dirty) {
+            fileStream.clear();                       // <-- limpa flags
+            fileStream.seekp(static_cast<std::streamoff>(v.pageId) * pageSize);
+            fileStream.write(v.data.data(), pageSize);
+        }
+        pageTable.erase(v.pageId);
+        buffer.pop_back();
+    }
+
     std::string filePath;
-    size_t pageSize;
-    size_t capacity;
+    size_t      pageSize;
+    size_t      capacity;
     std::fstream fileStream;
 
-    // Lista de frames: front = mais recentemente usado (MRU), back = a ser evictado (LRU)
-    std::list<Frame> buffer;
-    std::unordered_map<int, std::list<Frame>::iterator> pageTable;
-
-    void evictIfNeeded() {
-        if (buffer.size() >= capacity) {
-            auto& victim = buffer.back();
-            if (victim.dirty) {
-                fileStream.seekp((std::streamoff)victim.pageId * pageSize);
-                fileStream.write(victim.data.data(), pageSize);
-            }
-            pageTable.erase(victim.pageId);
-            buffer.pop_back();
-        }
-    }
+    std::list<Frame> buffer;   // lista LRU
+    std::unordered_map<int,
+        std::list<Frame>::iterator> pageTable;   // id -> iterador
 };
 
 #endif // BUFFER_MANAGER_H
