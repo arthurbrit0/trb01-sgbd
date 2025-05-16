@@ -1,0 +1,44 @@
+# Arquivos e pastas gerados pelo CMake
+**/CMakeCache.txt
+**/CMakeFiles/
+**/cmake_install.cmake
+**/CTestTestfile.cmake
+**/Makefile
+
+# Pasta de build (onde os binários e objetos são gerados)
+build/
+
+# Executáveis
+*.exe
+*.out
+*.app
+IndexApp
+
+# Arquivos de bibliotecas (se você linkar estaticamente e eles ficarem na raiz)
+*.a
+*.lib
+*.so
+*.dll
+
+# Arquivos de índice e saída gerados pelo programa
+index.txt
+out.txt
+
+# Arquivos específicos de IDEs populares
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.idea/
+
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de backup de editores
+*~
+*.swp
+*.swo
+
+# Arquivos de núcleo (core dumps)
+core.*
+*.stackdump 
